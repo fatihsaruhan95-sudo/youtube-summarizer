@@ -49,6 +49,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<Transcrip
     });
   } catch (err: unknown) {
     const appErr = err as AppError;
+    console.error("Transcript fetch error:", appErr.message, appErr.code);
     if (appErr.code === "TRANSCRIPT_DISABLED") {
       return NextResponse.json(
         { success: false, error: "The creator has disabled transcripts for this video.", code: "TRANSCRIPT_DISABLED" },
