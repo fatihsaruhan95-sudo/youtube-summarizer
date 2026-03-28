@@ -2,6 +2,13 @@ export interface SummarizeRequest {
   url: string;
 }
 
+export interface TranscriptResponse {
+  success: true;
+  videoId: string;
+  transcript: string;
+  segmentCount: number;
+}
+
 export interface SummarizeResponse {
   success: true;
   videoId: string;
@@ -24,4 +31,5 @@ export interface ErrorResponse {
     | "UNKNOWN";
 }
 
-export type ApiResponse = SummarizeResponse | ErrorResponse;
+export type TranscriptApiResponse = TranscriptResponse | ErrorResponse;
+export type SummarizeApiResponse = SummarizeResponse | ErrorResponse;

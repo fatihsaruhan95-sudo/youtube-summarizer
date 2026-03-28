@@ -9,7 +9,10 @@
       "Bash(timeout 15 npm run dev)",
       "mcp__Claude_Preview__preview_start",
       "Bash(xargs kill:*)",
-      "Bash(\"/Users/fatihsaruhan/Desktop/SRHN DEV/.env.local\")"
+      "Bash(\"/Users/fatihsaruhan/Desktop/SRHN DEV/.env.local\")",
+      "Bash(node -e \"const m = require\\(''youtube-transcript''\\); console.log\\(Object.keys\\(m\\)\\);\")",
+      "Bash(node --input-type=module:*)",
+      "Bash(node -e \"const m = require\\(''/Users/fatihsaruhan/Desktop/SRHN DEV/node_modules/youtube-transcript/dist/youtube-transcript.common.js''\\); console.log\\(Object.keys\\(m\\)\\);\")"
     ]
   }
 }
