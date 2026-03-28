@@ -1,5 +1,3 @@
-import { YoutubeTranscript } from "youtube-transcript";
-
 const MAX_CHARS = 80_000;
 
 function cleanText(text: string): string {
@@ -29,6 +27,7 @@ export async function fetchTranscript(videoId: string): Promise<{
   let segments;
 
   try {
+    const { YoutubeTranscript } = await import("youtube-transcript");
     // Try English first, then fall back to any available language
     try {
       segments = await YoutubeTranscript.fetchTranscript(videoId, {
