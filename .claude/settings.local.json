@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --yes --name srhn-dev)",
+      "Bash(sudo rm:*)",
+      "Bash(npm install:*)",
+      "Bash(npm cache:*)",
+      "Bash(npx tsc:*)",
+      "Bash(timeout 15 npm run dev)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(xargs kill:*)",
+      "Bash(\"/Users/fatihsaruhan/Desktop/SRHN DEV/.env.local\")"
+    ]
+  }
+}
